@@ -6,7 +6,7 @@ namespace BusinessLayer
     {
         public static void AddService(IServiceCollection service)
         {
-
+            service.AddScoped<IAccountLogic, AccountLogic>();
         }
     }
 }

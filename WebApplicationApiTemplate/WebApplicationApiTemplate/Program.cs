@@ -16,6 +16,8 @@ BusinessLogicConfigure.AddService(builder.Services);
 DataManagerConfigure.AddService(builder.Services);
 InfrastructureConfigure.AddService(builder.Services);
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

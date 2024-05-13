@@ -6,7 +6,7 @@ namespace DataLayer
     {
         public static void AddService(IServiceCollection service)
         {
-
+            service.AddScoped<IAccountManager, AccountManager>();
         }
     }
 }

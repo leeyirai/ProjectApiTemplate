@@ -6,7 +6,7 @@ namespace Infrastructure
     {
         public static void AddService(IServiceCollection service)
         {
-
+            service.AddScoped<ISqliteInfra, SqliteInfra>();
         }
     }
 }
